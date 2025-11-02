@@ -558,7 +558,7 @@
        <!-- agendamento-section -->
 <section class="appointment-section">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-17.png);"></div>
-    <figure class="image-layer"><img src="assets/images/resource/women-1.png" alt="Atendimento oftalmológico"></figure>
+    <figure class="image-layer"><img src="assets/images/resource/about-1.jpg" alt="Atendimento oftalmológico"></figure>
 
     <div class="outer-container clearfix">
         

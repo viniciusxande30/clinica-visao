@@ -67,6 +67,7 @@
 
  ***/
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Raleway:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root{
   --theme-color: #008037;
@@ -77,8 +78,9 @@
   --orange-color: #00FF00;
   --text-color: #717171;
   --title-color: #111111;
-  --text-font: 'Roboto', sans-serif;
-  --title-font: 'Source Sans Pro', sans-serif;
+  --text-font: 'Raleway', sans-serif;          /* Corpo do texto - moderna e refinada */
+  --title-font: 'Playfair Display', serif;     /* Títulos - elegante e sofisticada */
+  --accent-font: 'Roboto', sans-serif;         /* Alternativa neutra para botões e menus */
   --secondary-font: 'Caveat', cursive;
 }
 
