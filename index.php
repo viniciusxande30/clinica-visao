@@ -61,7 +61,7 @@
         <div class="outer-container">
             <div class="top-inner">
                 <ul class="info-list clearfix">
-                    <li><i class="icon-46"></i><a href="mailto:contato@clinicavisaoslz.com.br">contato@clinicavisaoslz.com.br</a></li>
+                    <li><i class="icon-46"></i><a href="mailto:agendamento@clinicavisaoslz.com.br">agendamento@clinicavisaoslz.com.br</a></li>
                     <li><i class="icon-3"></i>Horário de Atendimento: <span>Seg a Sex: 8h às 18h</span></li>
                 </ul>
                 <ul class="social-links clearfix">
@@ -92,7 +92,11 @@
                                 <li><a href="#home">Início</a></li>
                                 <li><a href="#sobrenos">Sobre Nós</a></li>
                                 <li><a href="#service">Especialidades</a></li>
-                                <!-- <li><a href="#project">Estrutura</a></li> -->
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalLocalizacao">
+                                        Localização
+                                    </a>
+                                </li>
                                 <li><a href="#contato">Contato</a></li>
                             </ul>
                         </div>
@@ -102,7 +106,7 @@
                     <div class="support-box">
                         <div class="icon-box"><img src="assets/images/icons/icon-1.svg" alt=""></div>
                         <span>Agende por Telefone</span>
-                        <h6><a href="tel:+559881324929">(98)8132-4929</a></h6>
+                        <h6><a href="tel:+5598981324929">(98)98132-4929</a></h6>
                     </div>
                     <div class="btn-box">
                         <a href="#agendamento" class="theme-btn btn-one"><span>Agendar Consulta</span></a>
@@ -128,7 +132,7 @@
                     <div class="support-box">
                         <div class="icon-box"><img src="assets/images/icons/icon-1.svg" alt=""></div>
                         <span>Agende por Telefone</span>
-                        <h6><a href="tel:+559881324929">(98)8132-4929</a></h6>
+                        <h6><a href="tel:+559881324929">(98)98132-4929</a></h6>
                     </div>
                     <div class="btn-box">
                         <a href="#agendamento" class="theme-btn btn-one"><span>Agendar Consulta</span></a>
@@ -156,9 +160,9 @@
         <div class="contact-info">
             <h4>Fale Conosco</h4>
             <ul>
-                <li>Nosso Endereço - Av. Contorno Leste Oeste, 03 COHATRACK</li>
+                <li>Nosso Endereço - Av. Contorno Leste Oeste, 03 COHATRAC</li>
                 <li><a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">(98)8132-4929</a></li>
-                <li><a href="mailto:contato@clinicavisaoslz.com.br">contato@clinicavisaoslz.com.br</a></li>
+                <li><a href="mailto:agendamento@clinicavisaoslz.com.br">agendamento@clinicavisaoslz.com.br</a></li>
             </ul>
         </div>
 
@@ -173,68 +177,34 @@
 <!-- Fim Menu Mobile -->
 
 
-       <!-- Seção Banner -->
-<section class="banner-section p_relative"  id="home">
-    <div class="banner-carousel owl-theme owl-carousel owl-dots-none owl-nav-none">
 
-        <!-- Slide 1 -->
-        <div class="slide-item p_relative">
+
+
+ <!-- banner-style-two -->
+        <section class="banner-style-two p_relative" id="home">
+            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
             <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-            </div>
-            <div class="shape-layer">
-                <div class="shape-1 float-bob-y" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                <div class="shape-2" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-                <div class="shape-3" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-                <div class="shape-4" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-25.png);"></div>
+                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+                <div class="pattern-3" style="background-image: url(assets/images/shape/shape-27.png);"></div>
             </div>
             <div class="auto-container">
-                <div class="content-box p_relative d_block z_5">
-                    <span class="title-text p_relative d_block">Cuidar da sua visão é nossa prioridade</span>
-                    <h2 class="p_relative d_block">Clínica especializada em <span>saúde ocular</span></h2>
+                <div class="content-box">
+                    <span class="sub-title">Atendimento com Tecnologia e Cuidado</span>
+                    <h2>Clínica Especializada em <span>Saúde Ocular</span></h2>
                     <p>Oferecemos atendimento humanizado, exames completos e tecnologia de ponta para o cuidado da sua visão.</p>
-                    <div class="btn-box">
-                        <a href="#agendamento" class="theme-btn btn-two"><span>Agendar Consulta</span></a>
+                    <div class="lower-box">
+                        <div class="btn-box"><a href="index-2.html" class="theme-btn btn-two"><span>Agendar Consulta</span></a></div>
                     </div>
                 </div>
             </div>
-            <div class="image-box">
-                <figure class="image"><img src="assets/images/banner/banner-img-1.png" alt="Consulta Oftalmológica"></figure>
-                <div class="doctors-list">
-                    <h3>+5.000</h3>
-                    <span>Pacientes Atendidos</span>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!-- banner-style-two end -->
 
-        <!-- Slide 2 (pode repetir ou trocar conteúdo se quiser destacar outro benefício) -->
-        <div class="slide-item p_relative">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-            </div>
-            <div class="shape-layer">
-                <div class="shape-1 float-bob-y" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                <div class="shape-2" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-                <div class="shape-3" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-                <div class="shape-4" style="background-image: url(assets/images/shape/shape-6.png);"></div>
-            </div>
-            <div class="auto-container">
-                <div class="content-box p_relative d_block z_5">
-                    <span class="title-text p_relative d_block">Atendimento com tecnologia e cuidado</span>
-                    <h2 class="p_relative d_block">Exames precisos com <span>equipamentos modernos</span></h2>
-                    <p>Realizamos exames oftalmológicos com precisão e conforto, garantindo diagnósticos rápidos e confiáveis.</p>
-                    <div class="btn-box">
-                        <a href="#agendamento" class="theme-btn btn-two"><span>Agendar Exame</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-</section>
-<!-- Fim Seção Banner -->
+
+
+     
 
 
       <!-- Seção Informações Rápidas -->
@@ -243,6 +213,7 @@
         <div class="row clearfix">
 
             <div class="col-lg-3 col-md-6 col-sm-12 info-block">
+                <a href="#agendamento">
                 <div class="info-block-one">
                     <div class="inner-box">
                         <div class="icon-box"><i class="icon-10"></i></div>
@@ -250,19 +221,23 @@
                         <h4>Marcar Consulta</h4>
                     </div>
                 </div>
+                </a>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 info-block">
+                <a href="#especialistas">
                 <div class="info-block-one">
                     <div class="inner-box">
                         <div class="icon-box"><i class="icon-34"></i></div>
                         <span>Nossa Equipe</span>
-                        <h4>Conheça os Médicos</h4>
+                        <h4>Dra. Eliane Macedo</h4>
                     </div>
                 </div>
+                </a>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 info-block">
+                <a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_BLANK">
                 <div class="info-block-one">
                     <div class="inner-box">
                         <div class="icon-box"><i class="icon-12"></i></div>
@@ -270,17 +245,42 @@
                         <h4>WhatsApp / Telefone</h4>
                     </div>
                 </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 info-block">
-                <div class="info-block-one">
-                    <div class="inner-box">
-                        <div class="icon-box"><i class="icon-13"></i></div>
-                        <span>Como Chegar</span>
-                        <h4>Localização da Clínica</h4>
-                    </div>
-                </div>
+          <!-- Bloco de informação -->
+<div class="col-lg-3 col-md-6 col-sm-12 info-block">
+    <div class="info-block-one">
+        <div class="inner-box" data-bs-toggle="modal" data-bs-target="#modalLocalizacao" style="cursor: pointer;">
+            <div class="icon-box"><i class="icon-13"></i></div>
+            <span>Como Chegar</span>
+            <h4>Nossa Localização</h4>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalLocalizacao" tabindex="-1" aria-labelledby="modalLocalizacaoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: none; border-radius: 12px;">
+            <div class="modal-header" style="border-bottom: none;">
+                <h5 class="modal-title" id="modalLocalizacaoLabel">Localização da Clínica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
+            <div class="modal-body p-0">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1762097169134!5m2!1spt-BR!2sbr!6m8!1m7!1sAr0RA-rVQSuesKxwQSpbfA!2m2!1d-2.543176926561952!2d-44.2090213854426!3f290.48132!4f0!5f0.7820865974627469"
+                    width="100%" height="450"
+                    style="border:0; border-radius: 0 0 12px 12px;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
         </div>
     </div>
@@ -288,14 +288,14 @@
 <!-- Fim Seção Informações Rápidas -->
 
         <!-- sobre-a-clinica -->
-<section class="about-section p_relative" >
+<section class="about-section p_relative">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-8.png);"></div>
     <div class="wave-layer">
         <!-- mantido apenas efeito visual -->
     </div>
 
     <div class="auto-container" id="service">
-        <div class="upper-content mb_80">
+        <div class="upper-content mb_10">
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div class="content-block-one">
@@ -313,9 +313,12 @@
                                         <div class="specialities-box">
                                             <h4>Nossas Especialidades</h4>
                                             <ul class="list-style-one clearfix">
-                                                <li>Consultas oftalmológicas</li>
-                                                <li>Exames de vista completos</li>
-                                                <li>Avaliação para óculos e lentes</li>
+                                                <li>Córnea</li>
+                                                <li>Catarata</li>
+                                                <li>Glaucoma</li>
+                                                <li>Retina</li>
+                                                <li>Lente de Contato</li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -343,7 +346,7 @@
                             <figure class="image"><img src="assets/images/resource/about-1.jpg" alt="Clínica de Oftalmologia"></figure>
                             <div class="text-box">
                                 <div class="image-shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
-                                <h2>+30</h2>
+                                <h2>+18</h2>
                                 <span>Anos de experiência em saúde ocular</span>
                             </div>
                         </div>
@@ -354,7 +357,7 @@
         </div>
 
        <!-- formulário de agendamento -->
-<div class="appointment-box" id="agendamento">
+<div class="appointment-box" id="agendamento" >
     <h4>Agende sua Consulta</h4>
     <div class="form-inner">
         <form method="post" action="enviar_agendamento.php" class="clearfix">
@@ -362,12 +365,31 @@
                 <div class="icon-box"><i class="icon-15"></i></div>
                 <span>Selecione o serviço</span>
                 <div class="select-box">
-                    <select class="selectmenu" name="servico" required>
+                <select class="selectmenu" name="servico" required>
+                    <option value="" disabled selected>Selecione um serviço</option>
+                    
+                    <!-- Consultas -->
+                    <optgroup label="Consultas">
                         <option value="Consulta oftalmológica">Consulta oftalmológica</option>
-                        <option value="Exame de vista">Exame de vista</option>
+                        <option value="Consulta para diagnóstico">Consulta para diagnóstico</option>
+                        <option value="Consulta para Glaucomatoso">Consulta para paciente Glaucomatoso</option>
                         <option value="Avaliação para óculos">Avaliação para óculos</option>
                         <option value="Retorno / Revisão">Retorno / Revisão</option>
-                    </select>
+                    </optgroup>
+
+                    <!-- Exames -->
+                    <optgroup label="Exames oftalmológicos">
+                        <option value="OCT - Tomografia de Coerência Óptica">OCT - Tomografia de Coerência Óptica</option>
+                        <option value="Campimetria computadorizada">Campimetria computadorizada</option>
+                        <option value="Biometria óptica">Biometria óptica</option>
+                        <option value="Topografia de córnea">Topografia de córnea</option>
+                        <option value="Paquimetria de córnea">Paquimetria de córnea</option>
+                        <option value="Microscopia especular">Microscopia especular</option>
+                        <option value="Retinografia">Retinografia</option>
+                        <option value="Mapeamento de retina">Mapeamento de retina</option>
+                        <option value="Tonometria de aplanação">Tonometria de aplanação</option>
+                    </optgroup>
+                </select>
                 </div>
             </div>
             <div class="form-group">
@@ -392,7 +414,7 @@
 <!-- fim sobre-a-clinica -->
 
 <!-- porque-escolher-section -->
-<section class="chooseus-section sec-pad p_relative">
+<section class="chooseus-section sec-pad p_relative"  id="especialistas">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-15.png);"></div>
     <div class="auto-container">
         
@@ -404,14 +426,63 @@
 
         <div class="tabs-box">
             <div class="tab-btns tab-buttons clearfix centred mb_40" style="margin-right:0">
-                <div class="tab-btn active-btn" data-tab="#tab-1"><h3>Tecnologia</h3></div>
-                <div class="tab-btn" data-tab="#tab-2"><h3>Satisfação</h3></div>
-                <div class="tab-btn" data-tab="#tab-3"><h3>Especialistas </h3></div>
+                <div class="tab-btn  active-btn" data-tab="#tab-1"><h3>Profissionais Qualificados </h3></div>
+                <div class="tab-btn" data-tab="#tab-2"><h3>Tecnologia de Ponta</h3></div>
+                <div class="tab-btn" data-tab="#tab-3"><h3>Tratamento Humanizado</h3></div>
             </div>
 
             <div class="tabs-content">
-                <!-- AbA 1 -->
+
+
+ <!-- AbA 3 -->
                 <div class="tab active-tab" id="tab-1">
+                    <div class="inner-box">
+                        <div class="shape" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+                        <div class="row clearfix">
+                            <div class="col-lg-6 col-md-12 col-sm-12 video-column">
+                                <div class="video-inner" style="background-image: url(assets/images/shape/doutora.png);">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 content-column"> 
+    <div class="content-block-two">
+        <div class="content-box ml_40">
+            <div class="text-box">
+                <h3>Dra. Eliane Macedo</h3>
+                <p>
+                    <strong>Titular do Conselho Brasileiro de Oftalmologia (CBO)</strong><br>
+                    Especialista em <strong>Córnea, Doenças Externas e da Superfície Ocular</strong>.<br><br>Seu compromisso 
+                    é oferecer diagnósticos precisos e tratamentos personalizados, garantindo bem-estar, 
+                    segurança e confiança em cada consulta.
+                </p>
+            </div>
+
+            <ul class="list-style-one clearfix">
+                <li>Especialista em Córnea – Doenças Externas e da Superfície Ocular</li>
+                <li>Titular do Conselho Brasileiro de Oftalmologia (CBO)</li>
+                <li>Atendimento humanizado e acolhedor</li>
+                <li>Explicação detalhada de cada diagnóstico e procedimento</li>
+                <li>Compromisso com a excelência em saúde ocular</li>
+            </ul>
+
+            <div class="text-box mt_30">
+                <h4>Equipe especializada em saúde ocular</h4>
+                <p>
+                    Contamos com profissionais experientes e constantemente atualizados para oferecer o melhor 
+                    tratamento para cada caso, com clareza e confiança. Nosso propósito é cuidar da sua visão 
+                    com dedicação, tecnologia de ponta e acompanhamento contínuo.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AbA 1 -->
+                <div class="tab" id="tab-2">
                     <div class="inner-box">
                         <div class="shape" style="background-image: url(assets/images/shape/shape-14.png);"></div>
                         <div class="row clearfix">
@@ -424,7 +495,7 @@
                                 <div class="content-block-two">
                                     <div class="content-box ml_40">
                                         <div class="text-box">
-                                            <h3>Tecnologia moderna para diagnósticos precisos</h3>
+                                            <h3>Tecnologia de Ponta</h3>
                                             <p>Utilizamos equipamentos avançados para garantir exames rápidos, precisos e confortáveis, permitindo diagnósticos confiáveis e tratamentos mais eficazes.</p>
                                         </div>
                                         <ul class="list-style-one clearfix">
@@ -444,7 +515,7 @@
                 </div>
 
                 <!-- AbA 2 -->
-                <div class="tab" id="tab-2">
+                <div class="tab" id="tab-3">
                     <div class="inner-box">
                         <div class="shape" style="background-image: url(assets/images/shape/shape-14.png);"></div>
                         <div class="row clearfix">
@@ -466,9 +537,7 @@
                                             <li>Procedimentos seguros e eficazes</li>
                                             <li>Acompanhamento pós-consulta</li>
                                         </ul>
-                                        <div class="btn-box">
-                                            <a href="#service" class="theme-btn btn-two"><span>Ver depoimentos</span></a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -476,38 +545,7 @@
                     </div>
                 </div>
 
-                <!-- AbA 3 -->
-                <div class="tab" id="tab-3">
-                    <div class="inner-box">
-                        <div class="shape" style="background-image: url(assets/images/shape/shape-14.png);"></div>
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-12 col-sm-12 video-column">
-                                <div class="video-inner" style="background-image: url(assets/images/resource/video-1.jpg);">
-                                    
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                <div class="content-block-two">
-                                    <div class="content-box ml_40">
-                                        <div class="text-box">
-                                            <h3>Equipe especializada em saúde ocular</h3>
-                                            <p>Contamos com profissionais experientes e constantemente atualizados para oferecer o melhor tratamento para cada caso, com clareza e confiança.</p>
-                                        </div>
-                                        <ul class="list-style-one clearfix">
-                                            <li>Médicos oftalmologistas especializados</li>
-                                            <li>Atendimento acolhedor e seguro</li>
-                                            <li>Explicação detalhada dos resultados</li>
-                                            <li>Confiança e proximidade no atendimento</li>
-                                        </ul>
-                                        <div class="btn-box">
-                                            <a href="#about" class="theme-btn btn-two"><span>Conhecer equipe</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
         </div>
@@ -671,9 +709,9 @@
                         </div>
                         <div class="widget-content">
                             <ul class="info-list clearfix">
-                                <li><img src="assets/images/icons/icon-5.svg" alt="">Email: <a href="mailto:contato@clinicavisaoslz.com.br">contato@clinicavisaoslz.com.br</a></li>
-                                <li><img src="assets/images/icons/icon-6.svg" alt="">Telefone: <a href="tel:+559881324929">(98)8132-4929</a></li>
-                                <li><img src="assets/images/icons/icon-7.svg" alt="">Nosso Endereço - Av. Contorno Leste Oeste, 03 COHATRACK</li>
+                                <li><img src="assets/images/icons/icon-5.svg" alt="">Email: <a href="mailto:agendamento@clinicavisaoslz.com.br">agendamento@clinicavisaoslz.com.br</a></li>
+                                <li><img src="assets/images/icons/icon-6.svg" alt="">Telefone: <a href="tel:+5598981324929">(98)98132-4929</a></li>
+                                <li><img src="assets/images/icons/icon-7.svg" alt="">Nosso Endereço - Av. Contorno Leste Oeste, 03 COHATRAC</li>
                             </ul>
                         </div>
                     </div>
