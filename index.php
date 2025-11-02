@@ -307,33 +307,6 @@
                             <div class="text-box mb_30 pb_30">
                                 <p>Com uma equipe especializada e equipamentos modernos, nossa clínica oferece um atendimento acolhedor, focado na prevenção, diagnóstico e tratamento de problemas de visão. Nosso compromisso é garantir mais qualidade de vida e conforto visual para você e sua família.</p>
                             </div>
-                            <div class="inner-box">
-                                <div class="row clearfix">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                        <div class="specialities-box">
-                                            <h4>Nossas Especialidades</h4>
-                                            <ul class="list-style-one clearfix">
-                                                <li>Córnea</li>
-                                                <li>Catarata</li>
-                                                <li>Glaucoma</li>
-                                                <li>Retina</li>
-                                                <li>Lente de Contato</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                        <div class="specialities-box">
-                                            <h4>Nosso Propósito</h4>
-                                            <ul class="list-style-one clearfix">
-                                                <li>Atendimento humano e próximo</li>
-                                                <li>Tecnologia para diagnósticos precisos</li>
-                                                <li>Cuidado contínuo com sua visão</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,6 +328,173 @@
 
             </div>
         </div>
+
+        <section class="specialties-section" style="margin-top:-100px;margin-bottom:-50px">
+  <div class="container">
+
+    <div class="specialties-grid">
+      <div class="speciality-card">
+        <h4>Nossas Especialidades</h4>
+        <ul class="list-style-one">
+          <li>Córnea</li>
+          <li>Catarata</li>
+          <li>Glaucoma</li>
+          <li>Retina</li>
+          <li>Lente de Contato</li>
+        </ul>
+      </div>
+
+      <div class="speciality-card">
+        <h4>Nosso Propósito</h4>
+        <ul class="list-style-one">
+          <li>Atendimento humano e próximo</li>
+          <li>Tecnologia para diagnósticos precisos</li>
+          <li>Cuidado contínuo com sua visão</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+:root {
+  --text-font: 'Roboto', sans-serif;
+  --title-font: 'Source Sans Pro', sans-serif;
+  --primary-color: #1a1a1a;
+  --accent-color: #0078b7;
+  --bg-light: #f9fbfd;
+}
+
+/* ===== Sessão de Especialidades ===== */
+.specialties-section {
+  background: var(--bg-light);
+  padding: 90px 40px;
+  border-radius: 20px;
+  font-family: var(--text-font);
+}
+
+.specialties-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Título ===== */
+.sec-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sec-title .sub-title {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 5px;
+}
+
+.sec-title h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* ===== Texto introdutório ===== */
+.text-box {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px;
+}
+
+.text-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ===== Cards ===== */
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+}
+
+.speciality-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.speciality-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.speciality-card h4 {
+  font-family: var(--title-font);
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin-bottom: 18px;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 10px;
+}
+
+/* ===== Lista ===== */
+.list-style-one {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-style-one li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.98rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.list-style-one li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .specialties-section {
+    padding: 60px 20px;
+  }
+
+  .speciality-card {
+    padding: 25px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
        <!-- formulário de agendamento -->
 <div class="appointment-box" id="agendamento" >
@@ -413,6 +553,9 @@
 </section>
 <!-- fim sobre-a-clinica -->
 
+
+
+
 <!-- porque-escolher-section -->
 <section class="chooseus-section sec-pad p_relative"  id="especialistas">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-15.png);"></div>
@@ -445,36 +588,95 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 content-column"> 
-    <div class="content-block-two">
-        <div class="content-box ml_40">
-            <div class="text-box">
-                <h3>Dra. Eliane Macedo</h3>
-                <p>
-                    <strong>Titular do Conselho Brasileiro de Oftalmologia (CBO)</strong><br>
-                    Especialista em <strong>Córnea, Doenças Externas e da Superfície Ocular</strong>.<br><br>Seu compromisso 
-                    é oferecer diagnósticos precisos e tratamentos personalizados, garantindo bem-estar, 
-                    segurança e confiança em cada consulta.
-                </p>
-            </div>
+    <style>
+:root {
+  --text-font: 'Roboto', sans-serif;
+  --title-font: 'Source Sans Pro', sans-serif;
+  --primary-color: #1a1a1a;
+  --accent-color: #0078b7;
+}
 
-            <ul class="list-style-one clearfix">
-                <li>Especialista em Córnea – Doenças Externas e da Superfície Ocular</li>
-                <li>Titular do Conselho Brasileiro de Oftalmologia (CBO)</li>
-                <li>Atendimento humanizado e acolhedor</li>
-                <li>Explicação detalhada de cada diagnóstico e procedimento</li>
-                <li>Compromisso com a excelência em saúde ocular</li>
-            </ul>
+.content-block-two {
+  background: #fff;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: var(--text-font);
+  color: var(--primary-color);
+}
 
-            <div class="text-box mt_30">
-                <h4>Equipe especializada em saúde ocular</h4>
-                <p>
-                    Contamos com profissionais experientes e constantemente atualizados para oferecer o melhor 
-                    tratamento para cada caso, com clareza e confiança. Nosso propósito é cuidar da sua visão 
-                    com dedicação, tecnologia de ponta e acompanhamento contínuo.
-                </p>
-            </div>
-        </div>
+.content-box {
+  margin-left: 20px;
+}
+
+.text-box h3 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.text-box h4 {
+  font-family: var(--title-font);
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.text-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.list-style-one {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.list-style-one li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.97rem;
+  color: #333;
+}
+
+.list-style-one li::before {
+  content: '✔';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .list-style-one {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="content-block-two">
+  <div class="content-box">
+    <div class="text-box">
+      <h3>Dra. Eliane Macedo</h3>
+      <p>
+        <strong>Titular do Conselho Brasileiro de Oftalmologia (CBO)</strong><br>
+        Especialista em <strong>Córnea, Doenças Externas e da Superfície Ocular</strong>.<br><br>
+        Seu compromisso é oferecer diagnósticos precisos e tratamentos personalizados,
+        garantindo bem-estar, segurança e confiança em cada consulta.
+      </p>
     </div>
+
+  </div>
+</div>
 </div>
 
                         </div>
@@ -624,7 +826,7 @@
                             <div class="tab-btns tab-buttons clearfix mb_30">
                                 <div class="tab-btn active-btn" data-tab="#tab-4">Nossa visão</div>
                                 <div class="tab-btn" data-tab="#tab-5">Nossa missão</div>
-                                <div class="tab-btn" data-tab="#tab-6">Nosso jeito de cuidar</div>
+                                <div class="tab-btn" data-tab="#tab-6">Valores</div>
                             </div>
                             <div class="tabs-content">
                                 
