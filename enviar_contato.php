@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'mail.clinicavisaoslz.com.br'; // Ex: mail.clinicavisao.com.br
         $mail->SMTPAuth = true;
-        $mail->Username = 'administrativo@clinicavisaoslz.com.br'; // E-mail autenticado
+        $mail->Username = 'agendamento@clinicavisaoslz.com.br'; // E-mail autenticado
         $mail->Password = 'Resultado@2025'; // Senha do e-mail
         $mail->SMTPSecure = 'ssl'; // tls ou ssl conforme servidor
         $mail->Port = 465; // 465 para SSL, 587 para TLS
 
         // Remetente e Destinatário
-        $mail->setFrom('administrativo@clinicavisaoslz.com.br', 'Site Clínica Visão');
-        $mail->addAddress('administrativo@clinicavisaoslz.com.br', 'Recepção Clínica'); // Destino
+        $mail->setFrom('agendamento@clinicavisaoslz.com.br', 'Site Clínica Visão');
+        $mail->addAddress('agendamento@clinicavisaoslz.com.br', 'Recepção Clínica'); // Destino
 
         // ✅ Conteúdo do e-mail
         $mail->isHTML(true);
