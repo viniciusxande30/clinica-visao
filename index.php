@@ -77,7 +77,7 @@
         <div class="outer-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Clínica Visão"></a></figure>
+                    <figure class="logo"><a href="index.php"><img src="assets/images/logo.png" alt="Clínica Visão"></a></figure>
                 </div>
                 <div class="menu-area">
                     <!--Mobile Navigation Toggler-->
@@ -92,6 +92,7 @@
                                 <li><a href="#home">Início</a></li>
                                 <li><a href="#sobrenos">Sobre Nós</a></li>
                                 <li><a href="#service">Especialidades</a></li>
+
                                 <li>
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modalLocalizacao">
                                         Localização
@@ -121,7 +122,7 @@
         <div class="outer-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                    <figure class="logo"><a href="index.php"><img src="assets/images/logo.png" alt=""></a></figure>
                 </div>
                 <div class="menu-area">
                     <nav class="main-menu clearfix">
@@ -150,7 +151,7 @@
 
     <nav class="menu-box">
         <div class="nav-logo">
-            <a href="index.html"><img src="assets/images/logo-2.png" alt="Clínica Visão" title="Clínica Visão"></a>
+            <a href="index.php"><img src="assets/images/logo-2.png" alt="Clínica Visão" title="Clínica Visão"></a>
         </div>
 
         <div class="menu-outer">
@@ -182,7 +183,7 @@
 
  <!-- banner-style-two -->
         <section class="banner-style-two p_relative" id="home">
-            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
+            <div class="bg-layer" style="background-image: url(assets/images/clinica_visao/clinica_visao_1.jpg);"></div>
             <div class="pattern-layer">
                 <div class="pattern-1" style="background-image: url(assets/images/shape/shape-25.png);"></div>
                 <div class="pattern-2" style="background-image: url(assets/images/shape/shape-26.png);"></div>
@@ -194,7 +195,7 @@
                     <h2>Clínica Especializada em <span>Saúde Ocular</span></h2>
                     <p>Oferecemos atendimento humanizado, exames completos e tecnologia de ponta para o cuidado da sua visão.</p>
                     <div class="lower-box">
-                        <div class="btn-box"><a href="index-2.html" class="theme-btn btn-two"><span>Agendar Consulta</span></a></div>
+                        <div class="btn-box"><a href="nosso-espaco.php" class="theme-btn btn-two"><span>Conheça Nosso Espaço</span></a></div>
                     </div>
                 </div>
             </div>
@@ -766,7 +767,7 @@
         
         <!-- Bloco de chamada rápida -->
         <div class="left-column">
-            <div class="bg-layer" style="background-image: url(assets/images/background/appointment-bg.jpg);"></div>
+            <div class="bg-layer" style="background-image: url(assets/images/clinica_visao/clinica_visao_2.jpg);"></div>
             <div class="content-box">
                 <div class="icon-box"><img src="assets/images/icons/icon-4.svg" alt=""></div>
                 <h3>Precisa agendar sua consulta de vista?</h3>
@@ -858,7 +859,7 @@
             <!-- imagem institucional -->
             <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                 <div class="image-box">
-                    <figure class="image"><img src="assets/images/resource/about-2.png" alt="Equipe oftalmológica"></figure>
+                    <figure class="image"><img src="assets/images/clinica_visao/clinica_visao_3.jpg" alt="Equipe oftalmológica"></figure>
                 </div>
             </div>
 
