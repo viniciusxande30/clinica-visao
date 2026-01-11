@@ -171,14 +171,14 @@
             <h4>Fale Conosco</h4>
             <ul>
                 <li>Nosso Endereço - Av. Contorno Leste Oeste, 03 COHATRAC</li>
-                <li><a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">(98)8132-4929</a></li>
+                <li><a href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">(98)8132-4929</a></li>
                 <li><a href="mailto:agendamento@clinicavisaoslz.com.br">agendamento@clinicavisaoslz.com.br</a></li>
             </ul>
         </div>
 
         <div class="social-links">
             <ul class="clearfix">
-                <li><a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" aria-label="WhatsApp"><span class="fab fa-whatsapp"></span></a></li>
+                <li><a href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" aria-label="WhatsApp"><span class="fab fa-whatsapp"></span></a></li>
                 <li><a href="https://www.instagram.com/draelianemacedooftalmo/" aria-label="Instagram"><span class="fab fa-instagram"></span></a></li>
             </ul>
         </div>
@@ -247,7 +247,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 info-block">
-                <a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_BLANK">
+                <a href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_BLANK">
                 <div class="info-block-one">
                     <div class="inner-box">
                         <div class="icon-box"><i class="icon-12"></i></div>
@@ -780,7 +780,7 @@
             <div class="content-box">
                 <div class="icon-box"><img src="assets/images/icons/icon-4.svg" alt=""></div>
                 <h3>Precisa agendar sua consulta de vista?</h3>
-                <span><a href="tel:+559881324929">Ligue agora: (98)8132-4929</a></span>
+                <span><a href="tel:+5598981324929">Ligue agora: (98)8132-4929</a></span>
             </div>
         </div>
 
@@ -892,7 +892,7 @@
                             <p>Especialistas em saúde ocular, com atendimento humanizado, exames precisos e tecnologia de ponta para o cuidado completo da sua visão.</p>
                             <ul class="social-links clearfix">
                                 <li><a href="https://www.instagram.com/draelianemacedooftalmo/"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"><i class="fab fa-whatsapp"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -948,7 +948,7 @@
 <!-- fim rodape -->
 
 
-<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/5581981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" class="phoneJs" title=""><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
+<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" class="phoneJs" title=""><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
 
         <!--Scroll to top-->
         <div class="scroll-to-top">
