@@ -550,7 +550,7 @@
             <div class="form-group">
                 <div class="icon-box"><i class="icon-17"></i></div>
                 <span>Telefone / WhatsApp</span>
-                <input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                <input type="text" name="telefone" placeholder="Adicione seu Número" title="Adicione o seu Número de Telefone ou WhatsApp para contato" required>
             </div>
             <div class="message-btn">
                 <button type="submit" class="theme-btn btn-one"><span>Agendar</span></button>
