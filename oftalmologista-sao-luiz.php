@@ -181,7 +181,7 @@
           <nav class="main-menu navbar-expand-md navbar-light clearfix">
             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
               <ul class="navigation scroll-nav clearfix">
-                <li><a href="#inicio">Início</a></li>
+                <li><a href="index.php">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#exames">Exames</a></li>
                 <li><a href="#especialista">Especialista</a></li>
