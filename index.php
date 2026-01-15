@@ -909,6 +909,7 @@
                                 <li><a href="#service">Especialidades</a></li>
                                 <li><a href="#agendamento">Agendar consulta</a></li>
                                 <li><a href="#footer">Contato</a></li>
+                                <li><a href="oftalmologista-sao-luiz.php">Oftalmologista São Luiz</a></li>
                             </ul>
                         </div>
                     </div>
