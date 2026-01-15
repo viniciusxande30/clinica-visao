@@ -184,7 +184,6 @@
                 <li><a href="index.php">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#exames">Exames</a></li>
-                <li><a href="#especialista">Especialista</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
                 <li><a href="#agendar">Agendar</a></li>
@@ -212,7 +211,7 @@
 <section class="lp-hero" id="inicio">
   <div class="lp-wrap">
     <div class="row clearfix" style="align-items:center;gap:22px">
-      <div class="col-lg-7 col-md-12">
+      <div class="col-lg-12 col-md-12">
         <span class="sub-title" style="display:inline-block;margin-bottom:10px">Clínica de Olhos em São Luiz • MA</span>
         <h1 style="font-size:2.25rem;line-height:1.2;margin-bottom:12px">
           Oftalmologia em São Luiz: consulta com oftalmologista e exames completos na Clínica Visão
@@ -244,7 +243,7 @@
         </p>
       </div>
 
-      <div class="col-lg-5 col-md-12">
+      <div class="col-lg-12 col-md-12">
         <div class="lp-card">
           <h2 style="font-size:1.25rem;margin-bottom:10px">Agendamento rápido</h2>
           <p class="muted small" style="margin-bottom:14px">
