@@ -254,10 +254,8 @@
 
           <h4 style="margin-bottom:10px;">Categorias</h4>
           <ul class="category-list">
-            <li><a href="#"><span>Prevenção</span> <span class="count">6</span></a></li>
-            <li><a href="#"><span>Exames</span> <span class="count">4</span></a></li>
-            <li><a href="#"><span>Doenças Oculares</span> <span class="count">9</span></a></li>
-            <li><a href="#"><span>Lentes e Óculos</span> <span class="count">3</span></a></li>
+            <li><a href="olho-seco"><span>Prevenção</span> <span class="count">1</span></a></li>
+            <li><a href="sinais-de-catarata"><span>Doenças Oculares</span> <span class="count">1</span></a></li>
           </ul>
 
           <hr style="margin:18px 0; opacity:.12;">
@@ -287,8 +285,8 @@
                 <h3 class="blog-title">Sinais de catarata: quando procurar um oftalmologista?</h3>
                 <p class="blog-excerpt">Entenda os sintomas mais comuns e quais exames ajudam a identificar a catarata com segurança.</p>
                 <div class="blog-actions">
-                  <a href="post-catarata.php" class="theme-btn btn-two"><span>Ler artigo</span></a>
-                  <a href="post-catarata.php" style="font-weight:600;">Saiba mais</a>
+                  <a href="sinais-de-catarata.php" class="theme-btn btn-two"><span>Ler artigo</span></a>
+                  <a href="sinais-de-catarata.php" style="font-weight:600;">Saiba mais</a>
                 </div>
               </div>
             </div>
@@ -304,8 +302,8 @@
                 <h3 class="blog-title">Olho seco: hábitos simples que ajudam no dia a dia</h3>
                 <p class="blog-excerpt">Confira ajustes de rotina que reduzem o desconforto e quando é hora de investigar.</p>
                 <div class="blog-actions">
-                  <a href="post-olho-seco.php" class="theme-btn btn-two"><span>Ler artigo</span></a>
-                  <a href="post-olho-seco.php" style="font-weight:600;">Saiba mais</a>
+                  <a href="olho-seco.php" class="theme-btn btn-two"><span>Ler artigo</span></a>
+                  <a href="olho-seco.php" style="font-weight:600;">Saiba mais</a>
                 </div>
               </div>
             </div>
@@ -343,7 +341,7 @@
             <div class="widget-title"><h3>Navegação</h3></div>
             <div class="widget-content">
               <ul class="links-list clearfix">
-                <li><a href="index.php">Site</a></li>
+                <li><a href="index.php">Início</a></li>
                 <li><a href="#ultimos">Últimos posts</a></li>
                 <li><a href="#categorias">Categorias</a></li>
                 <li><a href="index.php#agendamento">Agendamento</a></li>

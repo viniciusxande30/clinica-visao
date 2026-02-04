@@ -910,6 +910,9 @@
                                 <li><a href="#agendamento">Agendar consulta</a></li>
                                 <li><a href="#footer">Contato</a></li>
                                 <li><a href="oftalmologista-sao-luiz.php">Oftalmologista São Luiz</a></li>
+                                <li><a href="doutora-eliane.php">Doutora Eliane</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+
                             </ul>
                         </div>
                     </div>
