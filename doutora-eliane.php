@@ -258,8 +258,8 @@
           <!-- TEXTO -->
           <div class="doctor-text">
             <div class="doctor-title">
-              <span class="sub-title">Clínica Visão do Quatrac</span>
-              <h1>Dra. Eliane Lopes Macedo</h1>
+              <span class="sub-title">Clínica Visão do COHATRAC</span>
+              <h1>Dra. Eliane Macedo</h1>
               <p class="lead">Oftalmologista em São Luís do Maranhão</p>
             </div>
 
@@ -279,7 +279,7 @@
             </p>
 
             <p>
-              Atua há mais de duas décadas na <strong>Clínica Visão do Quatrac</strong>, em São Luís – MA, onde é reconhecida
+              Atua há mais de duas décadas na <strong>Clínica Visão do COHATRAC</strong>, em São Luís – MA, onde é reconhecida
               pelo atendimento <strong>humanizado</strong>, criterioso e baseado em evidências científicas, utilizando
               tecnologia moderna para garantir segurança e precisão nos resultados.
             </p>
