@@ -263,20 +263,21 @@
               <p class="lead">Oftalmologista em São Luís do Maranhão</p>
             </div>
 
-            <h2>Atendimento com precisão, cuidado e evidência</h2>
+            <h2>Atendimento personalizado, humanizado</h2>
 
             <p>
               A <strong>Dra. Eliane Lopes Macedo</strong> é médica oftalmologista em São Luís do Maranhão, com mais de
-              <strong>20 anos de experiência</strong> no cuidado da saúde ocular. Graduou-se em Medicina pela
-              <strong>Universidade Federal do Piauí (UFPI)</strong> e realizou sua especialização em Oftalmologia no
+              <strong>23 anos de experiência</strong> no cuidado da saúde ocular. Graduou-se em Medicina pela
+              <strong>Universidade Federal do Maranhão (UFMA)</strong> e subespecialidade no
               <strong>Hospital Oftalmológico de Sorocaba (HOS)</strong>, referência nacional na área.
             </p>
 
             <p>
-              Possui especialidade em <strong>Córnea e Catarata</strong>, atuando no diagnóstico, acompanhamento e tratamento
+              É titular do<strong>CONSELHO BRASILEIRO DE OFTALMOLOGIA</strong>, atuando no diagnóstico, acompanhamento e tratamento
               das principais doenças oculares, incluindo avaliação oftalmológica completa, cirurgia de catarata e
-              acompanhamento de doenças da córnea.
+              acompanhamento de doenças da córnea e glaucoma.
             </p>
+
 
             <p>
               Atua há mais de duas décadas na <strong>Clínica Visão do COHATRAC</strong>, em São Luís – MA, onde é reconhecida
@@ -286,7 +287,7 @@
 
             <p>
               A Dra. Eliane Macedo atende pacientes que buscam <strong>oftalmologista em São Luís</strong>,
-              <strong>especialista em catarata</strong>, <strong>especialista em córnea</strong> e acompanhamento
+              <strong>especialista em catarata</strong>, <strong>especialista em glaucoma, córnea</strong> e acompanhamento
               oftalmológico de confiança, sempre com foco na saúde visual e na qualidade de vida.
             </p>
 
