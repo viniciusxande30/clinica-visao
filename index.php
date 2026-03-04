@@ -55,9 +55,512 @@
 </head>
 
 
-<!-- page wrapper -->
-<body>
+<style>
+  /* ===== POPUP AGENDAMENTO (premium glass) ===== */
+  .appt-modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(1200px 600px at 20% 10%, rgba(0,0,0,.55), rgba(0,0,0,.78));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 18px;
+  }
 
+  .appt-modal-overlay.is-open{ display: flex; }
+
+  .appt-modal{
+    width: min(980px, 100%);
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(16px) scale(.98);
+    opacity: 0;
+    transition: .25s ease;
+    box-shadow: 0 30px 80px rgba(0,0,0,.45);
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(16, 18, 22, .72);
+  }
+
+  .appt-modal-overlay.is-open .appt-modal{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  .appt-modal-grid{
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 0;
+  }
+
+  @media (max-width: 900px){
+    .appt-modal-grid{ grid-template-columns: 1fr; }
+    .appt-left{ display: none; }
+  }
+
+  /* Lado esquerdo (impacto visual + copy) */
+  .appt-left{
+    padding: 34px 34px 30px;
+    background:
+      radial-gradient(900px 400px at 20% 10%, rgba(1,192,129,.25), transparent 60%),
+      radial-gradient(900px 600px at 80% 70%, rgba(255,255,255,.10), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    position: relative;
+  }
+
+  .appt-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.14);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .2px;
+    margin-bottom: 18px;
+  }
+
+  .appt-title{
+    color: #fff;
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 0 0 10px;
+    font-weight: 800;
+  }
+
+  .appt-sub{
+    color: rgba(255,255,255,.85);
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0 0 18px;
+    max-width: 44ch;
+  }
+
+  .appt-points{
+    display: grid;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .appt-point{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.10);
+    color: rgba(255,255,255,.88);
+    font-size: 14px;
+  }
+
+  .appt-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    margin-top: 4px;
+    background: #01c081;
+    box-shadow: 0 0 0 4px rgba(1,192,129,.18);
+    flex: 0 0 auto;
+  }
+
+  /* Lado direito (form) */
+  .appt-right{
+    padding: 22px 22px 18px;
+    background: rgba(255,255,255,.06);
+    border-left: 1px solid rgba(255,255,255,.10);
+  }
+
+  @media (max-width: 900px){
+    .appt-right{ border-left: 0; }
+  }
+
+  .appt-topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .appt-topbar h3{
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .2px;
+  }
+
+  .appt-close{
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(0,0,0,.20);
+    color: #fff;
+    cursor: pointer;
+    transition: .15s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .appt-close:hover{ transform: translateY(-1px); background: rgba(0,0,0,.35); }
+
+  /* Ajustes no seu form sem quebrar seu layout */
+  .appt-right .appointment-box{
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .appt-right .appointment-box h4{ display:none; }
+
+  /* Rodapé (checkbox + ação secundária) */
+  .appt-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,.12);
+  }
+
+  .appt-check{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,.80);
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .appt-check input{
+    width: 18px;
+    height: 18px;
+    accent-color: #01c081;
+  }
+
+  .appt-secondary{
+    color: rgba(255,255,255,.85);
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255,255,255,.35);
+    padding-bottom: 2px;
+  }
+  .appt-secondary:hover{ color:#fff; border-bottom-color: rgba(255,255,255,.7); }
+</style>
+
+
+
+<style>
+/* ===== FORM NO MODAL: deixar limpo e claro ===== */
+.appt-right .form-inner { margin-top: 12px; }
+
+/* organiza cada campo como bloco claro */
+.appt-right .form-group{
+  position: relative;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  padding: 14px 14px 12px 54px; /* espaço pro ícone à esquerda */
+  margin-bottom: 12px;
+}
+
+/* transforma o span em label de verdade */
+.appt-right .form-group > span{
+  display: block;
+  font-size: 12px;
+  letter-spacing: .2px;
+  color: rgba(255,255,255,.80);
+  margin-bottom: 8px;
+}
+
+/* posiciona o ícone sem “invadir” */
+.appt-right .form-group .icon-box{
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+/* inputs e select com aparência consistente */
+.appt-right .form-group input,
+.appt-right .form-group select{
+  width: 100%;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.25);
+  color: #fff;
+  padding: 10px 12px;
+  outline: none;
+}
+
+/* placeholder mais suave */
+.appt-right .form-group input::placeholder{
+  color: rgba(255,255,255,.45);
+}
+
+/* remove “estilos estranhos” do select wrapper do tema */
+.appt-right .form-group .select-box{ width: 100%; }
+.appt-right .form-group .select-box::after{ display:none !important; }
+
+/* se o seu tema usa jQuery UI Selectmenu, isso arruma */
+.appt-right .ui-selectmenu-button{
+  width: 100% !important;
+  height: 46px !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  background: rgba(0,0,0,.25) !important;
+  color: #fff !important;
+  padding: 10px 12px !important;
+  box-shadow: none !important;
+}
+.appt-right .ui-selectmenu-text{ line-height: 24px !important; }
+.appt-right .ui-selectmenu-icon{
+  margin-top: 6px !important;
+  opacity: .8;
+}
+
+/* o dropdown do select precisa ficar acima do modal */
+.ui-selectmenu-menu{
+  z-index: 1000000 !important;
+}
+.ui-menu{
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+
+/* botão principal: mais claro e com presença */
+.appt-right .message-btn .theme-btn.btn-one{
+  height: 52px;
+  border-radius: 14px !important;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+/* checkbox e link alinhados */
+.appt-footer{
+  align-items: center;
+}
+.appt-footer .appt-check{
+  gap: 8px;
+}
+</style>
+<style>
+  /* ===== LIMPA estilos do tema DENTRO do modal ===== */
+  .appt-right .appointment-box,
+  .appt-right .form-inner,
+  .appt-right .clearfix{ background: transparent !important; padding:0 !important; margin:0 !important; }
+
+  /* some com qualquer ícone/estrutura antiga caso ainda exista */
+  .appt-right .icon-box,
+  .appt-right .select-box,
+  .appt-right .selectmenu,
+  .appt-right .message-btn,
+  .appt-right .form-group,
+  .appt-right .appointment-box h4,
+  .appt-right .appointment-box span{
+    display: none !important;
+  }
+
+  /* garante que o bootstrap fique com boa “cara” dentro do glass */
+  .appt-right .form-control,
+  .appt-right .form-select{
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: none !important;
+    height: 50px;
+    width:100%;
+  }
+
+  .appt-right .form-control:focus,
+  .appt-right .form-select:focus{
+    border-color: rgba(1,192,129,.75);
+    box-shadow: 0 0 0 .2rem rgba(1,192,129,.18) !important;
+  }
+
+  .appt-right .form-label{
+    margin-bottom: 8px;
+    letter-spacing: .2px;
+  }
+
+
+
+  .custom-select-box{
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-selected{
+  background: #fff;
+  border-radius: 12px;
+  height: 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 15px;
+  cursor:pointer;
+  font-size:15px;
+  color:#333;
+}
+
+.arrow{
+  font-size:14px;
+}
+
+.custom-select-options{
+  position:absolute;
+  top:55px;
+  left:0;
+  width:100%;
+  background:#fff;
+  border-radius:12px;
+  max-height:250px;
+  overflow-y:auto;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  display:none;
+  z-index:9999;
+}
+
+.custom-option{
+  padding:12px 15px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.custom-option:hover{
+  background:#f1f1f1;
+}
+</style>
+<!-- page wrapper -->
+
+
+
+
+
+<body>
+<!-- ===== MODAL POPUP AGENDAMENTO ===== -->
+<div class="appt-modal-overlay" id="apptModal" aria-hidden="true">
+  <div class="appt-modal" role="dialog" aria-modal="true" aria-labelledby="apptModalTitle">
+
+    <div class="appt-modal-grid">
+      <!-- Lado esquerdo (copy + impacto) -->
+      <div class="appt-left">
+        <div class="appt-badge">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:99px;background:#01c081;"></span>
+          Agendamento rápido • Confirmação via WhatsApp
+        </div>
+
+        <h2 class="appt-title" id="apptModalTitle">Agende sua consulta oftalmológica </h2>
+        <p class="appt-sub">
+          Selecione o tipo de consulta, escolha a data e deixe seu WhatsApp.
+          A nossa equipe da Clínica Visão confirma com você e orienta os próximos passos.
+        </p>
+
+        <div class="appt-points">
+          <div class="appt-point"><span class="appt-dot"></span> Atendimento humanizado e organizado</div>
+          <div class="appt-point"><span class="appt-dot"></span> Horários otimizados para você</div>
+          <div class="appt-point"><span class="appt-dot"></span> Confirmação e suporte pelo <a href="https://wa.me/5598981324929?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" TARGET="_BLANK">WhatsApp</a></div>
+        </div>
+      </div>
+
+      <!-- Lado direito (form) -->
+      <div class="appt-right">
+        <div class="appt-topbar">
+          <h3>Fazer agendamento</h3>
+          <button class="appt-close" type="button" id="apptClose" aria-label="Fechar">
+            ✕
+          </button>
+        </div>
+
+        <!-- formulário de agendamento (o seu) -->
+        <div class="appointment-box" id="agendamento">
+          <h4>Agende sua Consulta</h4>
+          <div class="form-inner">
+           <form method="post" action="enviar_agendamento.php" class="mt-3" id="apptFormModal">
+
+  <div class="mb-3">
+  <label class="form-label text-white fw-semibold">Selecione o Serviço</label>
+
+  <!-- valor real enviado no form -->
+  <input type="hidden" name="servico" id="servicoInput" required>
+
+  <div class="custom-select-box" id="servicoSelect">
+
+    <div class="custom-select-selected">
+      Selecione um serviço
+      <span class="arrow">▾</span>
+    </div>
+
+    <div class="custom-select-options">
+
+      <div class="custom-option">Consulta oftalmológica</div>
+      <div class="custom-option">Consulta para diagnóstico</div>
+      <div class="custom-option">Consulta para paciente Glaucomatoso</div>
+      <div class="custom-option">Avaliação para óculos</div>
+      <div class="custom-option">Retorno / Revisão</div>
+
+      <div class="custom-option">OCT - Tomografia de Coerência Óptica</div>
+      <div class="custom-option">Campimetria computadorizada</div>
+      <div class="custom-option">Biometria óptica</div>
+      <div class="custom-option">Topografia de córnea</div>
+      <div class="custom-option">Paquimetria de córnea</div>
+      <div class="custom-option">Microscopia especular</div>
+      <div class="custom-option">Retinografia</div>
+      <div class="custom-option">Mapeamento de retina</div>
+      <div class="custom-option">Tonometria de aplanação</div>
+
+    </div>
+
+  </div>
+</div>
+
+  <div class="mb-3">
+    <label class="form-label text-white fw-semibold">Data</label>
+    <input type="text" name="data" class="form-control bg-white" placeholder="Selecione a data" id="datepicker" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label text-white fw-semibold">Telefone / WhatsApp</label>
+    <input type="text" name="telefone" class="form-control bg-white" placeholder="(00) 00000-0000" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100 py-3 fw-bold" style="border-radius:14px;">
+    AGENDAR AGORA
+  </button>
+
+</form>
+          </div>
+        </div>
+
+        <div class="appt-footer">
+          <label class="appt-check" for="apptDontShow">
+            <input type="checkbox" id="apptDontShow">
+            Não mostrar novamente
+          </label>
+
+          <!-- opcional: leva para a seção de agendamento na página -->
+          <a class="appt-secondary" href="#agendamento" id="apptGoSection">Ir para a seção</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
    
 
 
@@ -119,7 +622,9 @@
                         <h6><a href="tel:+5598981324929">(98)98132-4929</a></h6>
                     </div>
                     <div class="btn-box">
-                        <a href="#agendamento" class="theme-btn btn-one"><span>Agendar Consulta</span></a>
+                       <a href="#" id="" class="theme-btn btn-one abrirAgendamento">
+                        <span>Agendar Consulta</span>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -145,13 +650,18 @@
                         <h6><a href="tel:+559881324929">(98)98132-4929</a></h6>
                     </div>
                     <div class="btn-box">
-                        <a href="#agendamento" class="theme-btn btn-one"><span>Agendar Consulta</span></a>
+                        <a href="#" id="" class="theme-btn btn-one abrirAgendamento">
+                        <span>Agendar Consulta</span>
+                      </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+
+
 
        <!-- Menu Mobile -->
 <div class="mobile-menu">
@@ -1008,6 +1518,148 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+  (function(){
+    const modal = document.getElementById('apptModal');
+    const closeBtn = document.getElementById('apptClose');
+    const dontShow = document.getElementById('apptDontShow');
+    const goSection = document.getElementById('apptGoSection');
+
+    const STORAGE_KEY = 'appt_modal_hidden_v1';
+
+    function openModal(){
+      if (!modal) return;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+
+      // trava scroll do body
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      if (!modal) return;
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+
+    // Abrir ao carregar (com leve delay pra ficar premium)
+    window.addEventListener('load', () => {
+      const hidden = localStorage.getItem(STORAGE_KEY) === '1';
+      if (!hidden) setTimeout(openModal, 450);
+    });
+
+    // Fechar no X
+    closeBtn && closeBtn.addEventListener('click', closeModal);
+
+    // Fechar clicando fora do modal
+    modal && modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // Fechar no ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+
+    // Não mostrar novamente
+    dontShow && dontShow.addEventListener('change', () => {
+      if (dontShow.checked) localStorage.setItem(STORAGE_KEY, '1');
+      else localStorage.removeItem(STORAGE_KEY);
+    });
+
+    // Ir para seção e fechar
+    goSection && goSection.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeModal();
+      const target = document.querySelector('#agendamento');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Ajuste: se seu header é fixo, você pode compensar com CSS scroll-margin
+    });
+
+  })();
+</script>
+
+<script>
+
+const selectBox = document.querySelector("#servicoSelect");
+const selected = selectBox.querySelector(".custom-select-selected");
+const options = selectBox.querySelector(".custom-select-options");
+const hiddenInput = document.querySelector("#servicoInput");
+
+selected.addEventListener("click", function(){
+  options.style.display =
+    options.style.display === "block" ? "none" : "block";
+});
+
+document.querySelectorAll("#servicoSelect .custom-option").forEach(option => {
+
+  option.addEventListener("click", function(){
+
+    const value = this.innerText;
+
+    selected.childNodes[0].nodeValue = value + " ";
+
+    hiddenInput.value = value;
+
+    options.style.display = "none";
+
+  });
+
+});
+
+document.addEventListener("click", function(e){
+  if(!selectBox.contains(e.target)){
+    options.style.display = "none";
+  }
+});
+
+</script>
+
+<script>
+  $(function () {
+    // Força pt-BR e formato correto
+    $.datepicker.setDefaults({
+      dateFormat: "dd/mm/yy"
+    });
+
+    $("#datepicker").datepicker({
+      dateFormat: "dd/mm/yy"
+    });
+  });
+</script>
+<script>
+
+document.querySelectorAll(".abrirAgendamento").forEach(btn => {
+
+  btn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const modal = document.getElementById("apptModal");
+
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+
+  });
+
+});
+
+</script>
 
 </body><!-- End of .page_wrapper -->
 </html>
