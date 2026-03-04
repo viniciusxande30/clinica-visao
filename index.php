@@ -733,7 +733,7 @@
         <div class="row clearfix">
 
             <div class="col-lg-3 col-md-6 col-sm-12 info-block">
-                <a href="#agendamento">
+              <a href="#" id="" class="abrirAgendamento">
                 <div class="info-block-one">
                     <div class="inner-box">
                         <div class="icon-box"><i class="icon-10"></i></div>
